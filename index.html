@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>1ª Calculadora do Rodrigo</title>
+
+  <script>
+    class Calculadora {
+      somar() {
+        //leitura para soma
+        var n1 = document.querySelectorAll("input")[0].value;
+        var n2 = document.querySelectorAll("input")[1].value;
+        //cálculo da soma
+        var soma = parseFloat(n1) + parseFloat(n2);
+        //Saída da soma
+        alert(soma);
+      }
+
+      subtrair() {
+        //leitura para subtrair
+        //var n1 = document.querySelectorAll("input")[0].value;
+        //var n2 = document.querySelectorAll("input")[1].value;
+        var n1 = num1.value;
+        var n2 = num2.value;
+        //cálculo da subtração
+        //var resto = parseFloat(n1) - parseFloat(n2);
+        var resto = n1 - n2;
+        //Saída da subtração
+        alert(resto);
+      }
+
+      multiplicar() {
+        //leitura da multiplicação
+        //var n1 = document.querySelectorAll("input")[0].value;
+        //var n2 = document.querySelectorAll("input")[1].value;
+        var n1 = num1.value;
+        var n2 = num2.value;
+        //cálculo da multiplicação
+        //var produto = parseFloat(n1) * parseFloat(n2);
+        var produto = n1 * n2;
+        //Saída da multiplicação
+        alert(produto);
+      }
+
+      dividir() {
+        //leitura da divisão
+        //var n1 = document.querySelectorAll("input")[0].value;
+        //var n2 = document.querySelectorAll("input")[1].value;
+        var n1 = num1.value;
+        var n2 = num2.value;
+        //cálculo da divisão
+        //var quociente = parseFloat(n1) / parseFloat(n2);
+        if (n2 != 0) {
+          var quociente = n1 / n2;
+          //Saída da divisão
+          alert(quociente);
+        }
+        else {
+          alert("Digite número diferente de ZERO!");
+        }
+      }
+    }
+
+    var calc1 = new Calculadora();
+  </script>
+</head>
+
+<body>
+  <center>
+    <h1>✨Calculadora do Rodrigo</h1>
+    <input id="num1" type="number" placeholder="Número 1" color="yellow" />
+    <input id="num2" type="number" placeholder="Número 2" /><br />
+    <button onclick="calc1.somar()">Somar</button>
+    <button onclick="calc1.subtrair()">Subtrair</button>
+    <button onclick="calc1.multiplicar()">Multiplicar</button>
+    <button onclick="calc1.dividir()">Dividir</button>
+    
+    <h3>👀 Calcule também seu IMC</h3>
+    <a href="https://serene-varahamihira-809064.netlify.app/5-impl/calculadora-imc.html" target="_blank" title="Calculadora de IMC">Calculadora de
+      IMC</a>
+    <p>⚙ Versão 2020.07.17</p>
+    
+  </center>
+  <!--Edited by RAIZ by Rodrigo at 08th day, 8th month, year 2020 on 4:44h P.M.--> 
+
+</html>

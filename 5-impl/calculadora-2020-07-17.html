@@ -1,0 +1,74 @@
+<html>
+  <head>
+    <script>
+      class Calculadora{
+      somar(){
+        //leitura para soma
+        var n1 = document.querySelectorAll("input")[0].value;
+        var n2 = document.querySelectorAll("input")[1].value;
+        //cálculo da soma
+        var soma = parseFloat(n1) + parseFloat(n2);
+        //Saída da soma
+        alert(soma);
+      }
+      
+      subtrair(){
+        //leitura para subtrair
+        //var n1 = document.querySelectorAll("input")[0].value;
+        //var n2 = document.querySelectorAll("input")[1].value;
+        var n1 = num1.value;
+        var n2 = num2.value;
+        //cálculo da subtração
+        //var resto = parseFloat(n1) - parseFloat(n2);
+          var resto = n1 - n2;
+        //Saída da subtração
+        alert(resto);
+      }
+      
+      multiplicar(){
+        //leitura da multiplicação
+        //var n1 = document.querySelectorAll("input")[0].value;
+        //var n2 = document.querySelectorAll("input")[1].value;
+        var n1 = num1.value;
+        var n2 = num2.value;
+        //cálculo da multiplicação
+        //var produto = parseFloat(n1) * parseFloat(n2);
+          var produto = n1 * n2;
+        //Saída da multiplicação
+        alert(produto);
+      }
+      
+      dividir(){
+        //leitura da divisão
+        //var n1 = document.querySelectorAll("input")[0].value;
+        //var n2 = document.querySelectorAll("input")[1].value;
+        var n1 = num1.value;
+        var n2 = num2.value;
+        //cálculo da divisão
+        //var quociente = parseFloat(n1) / parseFloat(n2);
+          if (n2 != 0) {
+            var quociente = n1 / n2;
+        //Saída da divisão
+            alert(quociente);
+          }
+          else {
+            alert("Digite número diferente de ZERO!");
+        }
+      }
+    }
+
+      var calc1 = new Calculadora();
+    </script>
+  </head>
+  <body>
+    <center>
+    <h1>Calculadora TOP da Galáxia</h1>
+    <input id="num1" type="number" placeholder="Número 1"/>
+    <input id="num2" type="number" placeholder="Número 2"/><br />
+    <button onclick="calc1.somar()">Somar</button>
+    <button onclick="calc1.subtrair()">Subtrair</button>
+    <button onclick="calc1.multiplicar()">Multiplicar</button>
+    <button onclick="calc1.dividir()">Dividir</button>
+  </center>
+  <!--Edited by Rodrigo at 17th day, 7th month, year 2020 on 3h P.M.-->
+</html>
